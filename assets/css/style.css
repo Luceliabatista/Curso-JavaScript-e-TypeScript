@@ -232,7 +232,7 @@ body .full-width {
 }
 
 .background {
-  background-image: url(/assets/img/scattered.svg);
+  background-image: url(./assets/img/scattered.svg);
 }
 
 .form-group button {
