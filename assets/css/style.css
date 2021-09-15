@@ -11,6 +11,11 @@
   position: relative;
 }
 
+#historia p {
+  padding: 0 2rem;
+  margin-top: 2rem;
+}
+
 .main-video video {
   width: 100%;
   position: absolute;
@@ -50,7 +55,7 @@
 
 .menu-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding-top: 0;
   padding-bottom: 0;
@@ -58,6 +63,7 @@
 .menu h1 {
   font-size: 2.3rem;
   color: var(--primary-color);
+  text-align: center;
 }
 .menu h1 a {
   color: inherit;
@@ -138,6 +144,7 @@
   counter-reset: grid-counter;
 }
 .grid-main-heading {
+  margin-top: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -231,6 +238,11 @@ body .full-width {
   flex: 1 1 100%;
 }
 
+.logo {
+  width: 8rem;
+  height: auto;
+  margin-top: 0.5rem;
+}
 .background {
   background-image: url(../img/scattered.svg);
 }
@@ -311,6 +323,17 @@ legend {
     min-height: auto;
   }
 
+  .grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 6rem;
+    font-style: italic;
+    top: -1rem;
+    left: -2rem;
+    transform: rotate(5deg);
+  }
+
   .top3-content {
     margin-top: 0rem;
     grid-gap: 0rem;
@@ -323,7 +346,7 @@ legend {
   }
   .gallery-img {
     width: 100%;
-    max-width: 90%;
+    max-width: 100%;
     max-height: 100%;
   }
   .gallery-img img {
